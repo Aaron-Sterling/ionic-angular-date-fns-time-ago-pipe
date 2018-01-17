@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Time Ago Pipe Demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item text-wrap>
+    These should all display correctly across platforms where the standard Angular Date Pipe (based on i18n) is fragile.
+  </ion-item>
+
+  <ion-list>
+    <ion-item text-wrap>
+      Virgil wrote the Aeneid {{ virgil | ago }}.
+    </ion-item>
+    <ion-item text-wrap>
+      Napleon crowned himself emperor {{ napoleon | ago }}.
+    </ion-item>
+    <ion-item text-wrap>
+      Miley Cyrus was born {{ cyrus | ago }}.
+    </ion-item>
+    <ion-item text-wrap> 
+      You entered this page {{ enteredPage | ago }}.
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
